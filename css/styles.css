@@ -1,0 +1,169 @@
+/* Reset de estilo para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c8c8ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal */
+#app {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label dos campos */
+form label {
+    font-weight: bold;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Estilo dos inputs, selects e textarea */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"],
+form input[type="tel"],
+form input[type="url"],
+form input[type="time"],
+form input[type="month"],
+form input[type="datetime-local"],
+form select,
+form input[type="color"],
+form input[type="file"],
+form datalist {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.95em;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+/* Input de checkbox e radio */
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Foco nos inputs */
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Botões de submit, update e reset */
+input[type="submit"],
+input[type="reset"],
+button {
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Botão de enviar */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Botão de limpar */
+input[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Botão de atualizar */
+button#updateButton {
+    background-color: #ff9900;
+    color: white;
+    display: none;
+}
+
+/* Efeitos de hover para botões */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"]:hover {
+    background-color: #c0c0c0;
+}
+
+button#updateButton:hover {
+    background-color: #cc7a00;
+}
+
+/* Estilo da lista de cadastros */
+#cadastroList {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#cadastroList li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo dos botões de editar e excluir na lista */
+#cadastroList button {
+    background-color: transparent;
+    border: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#cadastroList button:hover {
+    color: #007bff;
+}
+
+#cadastroList button:first-child {
+    color: #ff9900;
+}
+
+#cadastroList button:last-child {
+    color: #dc3545;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Cadastro de Usuários</h1>
+        <form id="cadastroForm">
+            <label for="lnome">Nome:</label>
+            <input type="text" id="lnome" name="inome" placeholder="Digite seu nome" maxlength="30" autofocus required>
+            <br>
+            
+            <label for="ldtnasc">Data de nascimento:</label>
+            <input type="date" name="idtnasc" id="idtnasc" min="1950-01-01" max="2000-01-01">
+            <br>
+            
+            <label for="lIdade">Idade:</label>
+            <input type="number" name="nIdade" id="lIdade" min="18" max="50">
+            
+            <label for="lMaior">Maior de idade:</label>
+            <input type="checkbox" name="iMaior" id="lMaior">
+            <br>
+            
+            <label for="lsexo">Sexo:</label>
+            <input type="radio" name="iSexo" id="SexoF" value="F"> Feminino
+            <input type="radio" name="iSexo" id="SexoM" value="M"> Masculino
+            <br>
+            
+            <label for="lhorarioentrevista">Horário da entrevista:</label>
+            <input type="time" name="nhorarioentrevista" id="lhorarioentrevista">
+            <br>
+            
+            <label for="lsitePessoal">Site pessoal:</label>
+            <input type="url" name="iSitePessoal" id="lsitePessoal" value="https://www.uol.com.br/">
+            <br>
+            
+            <label for="lTelefone">Telefone:</label>
+            <input type="tel" name="iTelefone" id="lTelefone" placeholder="99 99999-9999" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+            <br>
+            
+            <label for="lTempoExp">Tempo de Experiência:</label>
+            <input list="tempoExp">
+            <datalist id="tempoExp">
+                <option value="Menos de um ano">Novato</option>
+                <option value="Entre 2 e 5 anos">Pleno</option>
+                <option value="Mais de 5 anos">Sênior</option>
+            </datalist>
+            <br>
+            
+            <label for="iDataHorarioEntrevista">Data/Horário da Entrevista:</label>
+            <input type="datetime-local" name="nDataHorarioentrevista" id="iDataHorarioEntrevista">
+            <br>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            
+            <label for="lultimoemprego">Data do último emprego:</label>
+            <input type="month" name="nultimoemprego" id="lultimoemprego">
+            <br>
+            
+            <label for="lConhecimento">Conhecimento em Informática:</label>
+            <select name="lConhecimento" id="lConhecimento" size="3" multiple>
+                <option value="win">Windows</option>
+                <option value="word">Word</option>
+                <option value="excel">Excel</option>
+                <option value="html">HTML</option>
+            </select>
+            <br>
+            
+            <label for="lArquivo">Arquivo:</label>
+            <input type="file" name="nArquivo" id="lArquivo" accept=".docx">
+            <br>
+        
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar" id="addButton">
+            <button type="button" id="updateButton" style="display: none;">Atualizar</button>
+        </form>
+
+    
+        <ul id="cadastroList"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+    
