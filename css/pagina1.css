@@ -41,7 +41,7 @@ ul {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #131212;
 }
 
 /* Hero Section */
@@ -101,7 +101,7 @@ button {
 }
 
 .how-it-works:hover {
-    background-color: #333;
+    background-color: #ffde82;
     color: #FFF;
 }
 
