@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF7E5;
+    color: #333;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.text-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hire-artist {
+    background-color: #F75842;
+    color: #FFF;
+}
+
+.how-it-works {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.hire-artist:hover {
+    background-color: #e04e3a;
+}
+
+.how-it-works:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+/* Illustration */
+.illustration {
+    max-width: 700px;
+    max-height: 800px;
+}
+
+.illustration img {
+    width: 100%;
+    height: auto;
+}
+
+/* Social Media Footer */
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-media a {
+    font-size: 18px;
+    color: #666;
+}
+
+.social-media a:hover {
+    color: #333;
+}
