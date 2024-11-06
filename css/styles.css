@@ -1,4 +1,3 @@
-/* Reset de estilo para garantir consistência */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@
 /* Estilos do corpo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0000ff;
+    background-color: #FFF7E5; 
     color: #333;
     display: flex;
     justify-content: center;
@@ -19,7 +18,7 @@ body {
 
 /* Container principal */
 #app {
-    background-color: #b5ccff;
+    background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -31,7 +30,7 @@ body {
 h1 {
     font-size: 1.8em;
     text-align: center;
-    color: #333;
+    color: #664D34; 
     margin-bottom: 20px;
 }
 
@@ -44,7 +43,7 @@ form {
 /* Label dos campos */
 form label {
     font-weight: bold;
-    color: #555;
+    color: #000000; /* Marrom suave */
     margin-top: 15px;
 }
 
@@ -65,24 +64,18 @@ form datalist {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffd3ae; /* Borda pastel suave */
     border-radius: 5px;
     font-size: 0.95em;
-    background-color: #f9f9f9;
+    background-color: #FAE9D5; /* Fundo pastel laranja claro */
     transition: border-color 0.3s;
-}
-
-/* Input de checkbox e radio */
-form input[type="checkbox"],
-form input[type="radio"] {
-    margin-right: 5px;
 }
 
 /* Foco nos inputs */
 form input:focus,
 form select:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #ffcda3; /* Laranja pastel mais escuro */
 }
 
 /* Botões de submit, update e reset */
@@ -100,34 +93,34 @@ button {
 
 /* Botão de enviar */
 input[type="submit"] {
-    background-color: #007bff;
-    color: white;
+    background-color: #ffc085; 
+    color: #333;
 }
 
 /* Botão de limpar */
 input[type="reset"] {
-    background-color: #e0e0e0;
+    background-color: #EFD9C2;
     color: #333;
 }
 
 /* Botão de atualizar */
 button#updateButton {
-    background-color: #ff9900;
-    color: white;
+    background-color: #fdad73; 
+    color: #4D331F; 
     display: none;
 }
 
 /* Efeitos de hover para botões */
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #F4A77D; 
 }
 
 input[type="reset"]:hover {
-    background-color: #c0c0c0;
+    background-color: #E2C9B1; 
 }
 
 button#updateButton:hover {
-    background-color: #cc7a00;
+    background-color: #E99A6C; 
 }
 
 /* Estilo da lista de cadastros */
@@ -137,8 +130,8 @@ button#updateButton:hover {
 }
 
 #cadastroList li {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #FFF2E0; 
+    border: 1px solid #E1C5A1; 
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
@@ -157,13 +150,13 @@ button#updateButton:hover {
 }
 
 #cadastroList button:hover {
-    color: #007bff;
+    color: #C69B6A; 
 }
 
 #cadastroList button:first-child {
-    color: #ff9900;
+    color: #D3A97E; 
 }
 
 #cadastroList button:last-child {
-    color: #dc3545;
+    color: #C86F4A; 
 }
